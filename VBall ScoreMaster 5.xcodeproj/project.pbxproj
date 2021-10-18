@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD437691271DF77900BB0595 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD437690271DF77900BB0595 /* AppTabBarView.swift */; };
 		ADCA15A4271A0C61007ACBC7 /* VBall_ScoreMaster_5App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA15A3271A0C61007ACBC7 /* VBall_ScoreMaster_5App.swift */; };
 		ADCA15A6271A0C61007ACBC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA15A5271A0C61007ACBC7 /* ContentView.swift */; };
 		ADCA15A8271A0C64007ACBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCA15A7271A0C64007ACBC7 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD437690271DF77900BB0595 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
 		ADCA15A0271A0C61007ACBC7 /* VBall ScoreMaster 5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VBall ScoreMaster 5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCA15A3271A0C61007ACBC7 /* VBall_ScoreMaster_5App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VBall_ScoreMaster_5App.swift; sourceTree = "<group>"; };
 		ADCA15A5271A0C61007ACBC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD43768F271DF76200BB0595 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AD437690271DF77900BB0595 /* AppTabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		ADCA1597271A0C61007ACBC7 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +61,7 @@
 		ADCA15A2271A0C61007ACBC7 /* VBall ScoreMaster 5 */ = {
 			isa = PBXGroup;
 			children = (
+				AD43768F271DF76200BB0595 /* TabBar */,
 				ADCA15A3271A0C61007ACBC7 /* VBall_ScoreMaster_5App.swift */,
 				ADCA15A5271A0C61007ACBC7 /* ContentView.swift */,
 				ADCA15A7271A0C64007ACBC7 /* Assets.xcassets */,
@@ -139,6 +150,7 @@
 			files = (
 				ADCA15A6271A0C61007ACBC7 /* ContentView.swift in Sources */,
 				ADCA15A4271A0C61007ACBC7 /* VBall_ScoreMaster_5App.swift in Sources */,
+				AD437691271DF77900BB0595 /* AppTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
