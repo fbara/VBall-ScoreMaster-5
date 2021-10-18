@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct VBall_ScoreMaster_5App: App {
+    @StateObject var viewRouter = ViewRouter()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewRouter: viewRouter)
         }
     }
 }

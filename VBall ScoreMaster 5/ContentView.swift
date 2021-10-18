@@ -9,20 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject var viewRouter: ViewRouter
+    
+    @State var showPopup = false
+    
     var body: some View {
         
         GeometryReader { geometry in
             VStack {
                 Spacer()
-                //Text("Scoreboard")
-                    .padding()
+                
+                switch viewRouter.currentPage {
+                case .score:
+                    Text("Score")
+                case .settings:
+                    Text("Settings")
+                case .support:
+                    Text("Support")
+                }
+                
                 Spacer()
+                
                 HStack {
-                    TabBarIcon(width: geometry.size.width/3, height: geometry.size.height/28, systemIconName:
+                    TabBarIcon(viewRouter: viewRouter, assignedPage: .score, width: geometry.size.width/3, height: geometry.size.height/28, systemIconName:
                                 "vballnet", tabName: "Score")
-                    TabBarIcon(width: geometry.size.width/3, height: geometry.size.height/28, systemIconName:
+                    TabBarIcon(viewRouter: viewRouter, assignedPage: .settings, width: geometry.size.width/3, height: geometry.size.height/28, systemIconName:
                                 "settings", tabName: "Settings")
-                    TabBarIcon(width: geometry.size.width/3, height: geometry.size.height/28, systemIconName:
+                    TabBarIcon(viewRouter: viewRouter, assignedPage: .support, width: geometry.size.width/3, height: geometry.size.height/28, systemIconName:
                                 "info.circle", tabName: "Support")
                     
                 }
@@ -30,17 +43,22 @@ struct ContentView: View {
                 .background(Color("TabBarBackground"))
                 .shadow(radius: 2)
             }
+            .edgesIgnoringSafeArea(.bottom)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewRouter: ViewRouter())
     }
 }
 
 struct TabBarIcon: View {
+    
+    @StateObject var viewRouter: ViewRouter
+    
+    let assignedPage: Page
     let width, height: CGFloat
     let systemIconName: String
     let tabName: String
@@ -56,5 +74,11 @@ struct TabBarIcon: View {
                 .font(.footnote)
             Spacer()
         }
+        .padding(.horizontal, -4)
+        .onTapGesture {
+            viewRouter.currentPage = assignedPage
+        }
+        .foregroundColor(viewRouter.currentPage == assignedPage ? Color("TabBarHighlight") : .gray)
+        .background(viewRouter.currentPage == assignedPage ? Color.green : .blue)
     }
 }
