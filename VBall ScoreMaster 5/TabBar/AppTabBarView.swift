@@ -17,13 +17,13 @@ struct AppTabBarView: View {
         TabView(selection: $selection) {
             Color.red
                 .tabItem {
-                    Image("vballnet")
+                    Image("house")
                     Text("Score")
                 }
             
             Color.blue
                 .tabItem {
-                    Image("settings")
+                    Image("gear")
                     Text("Settings")
                 }
             
