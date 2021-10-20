@@ -15,10 +15,10 @@ struct AppTabBarView: View {
     var body: some View {
         
         CustomTabBarContainerView(selection: $tabSelection) {
-            Color.blue
+            Color.red
                 .tabBarItem(tab: .home, selection: $tabSelection)
             
-            Color.red
+            Color.blue
                 .tabBarItem(tab: .settings, selection: $tabSelection)
             
             Color.green
