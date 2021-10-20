@@ -11,7 +11,7 @@ import SwiftUI
 struct VBall_ScoreMaster_5App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppTabBarView()
         }
     }
 }

@@ -11,6 +11,7 @@
 		AD437691271DF77900BB0595 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD437690271DF77900BB0595 /* AppTabBarView.swift */; };
 		AD992E6927209A9600699A1E /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD992E6827209A9600699A1E /* CustomTabBarContainerView.swift */; };
 		AD992E6B27209FA200699A1E /* TabBarItemsPreferenceKey.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD992E6A27209FA200699A1E /* TabBarItemsPreferenceKey.swift.swift */; };
+		AD992E6D2720A2B600699A1E /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD992E6C2720A2B600699A1E /* TabBarItem.swift */; };
 		ADCA15A4271A0C61007ACBC7 /* VBall_ScoreMaster_5App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA15A3271A0C61007ACBC7 /* VBall_ScoreMaster_5App.swift */; };
 		ADCA15A6271A0C61007ACBC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA15A5271A0C61007ACBC7 /* ContentView.swift */; };
 		ADCA15A8271A0C64007ACBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCA15A7271A0C64007ACBC7 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		AD437690271DF77900BB0595 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
 		AD992E6827209A9600699A1E /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
 		AD992E6A27209FA200699A1E /* TabBarItemsPreferenceKey.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemsPreferenceKey.swift.swift; sourceTree = "<group>"; };
+		AD992E6C2720A2B600699A1E /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		ADCA15A0271A0C61007ACBC7 /* VBall ScoreMaster 5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VBall ScoreMaster 5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCA15A3271A0C61007ACBC7 /* VBall_ScoreMaster_5App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VBall_ScoreMaster_5App.swift; sourceTree = "<group>"; };
 		ADCA15A5271A0C61007ACBC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 				AD992E6827209A9600699A1E /* CustomTabBarContainerView.swift */,
 				AD048287271EFA4B002487D7 /* CustomTabBarView.swift */,
 				AD992E6A27209FA200699A1E /* TabBarItemsPreferenceKey.swift.swift */,
+				AD992E6C2720A2B600699A1E /* TabBarItem.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				ADCA15A4271A0C61007ACBC7 /* VBall_ScoreMaster_5App.swift in Sources */,
 				AD437691271DF77900BB0595 /* AppTabBarView.swift in Sources */,
 				AD048288271EFA4B002487D7 /* CustomTabBarView.swift in Sources */,
+				AD992E6D2720A2B600699A1E /* TabBarItem.swift in Sources */,
 				AD992E6B27209FA200699A1E /* TabBarItemsPreferenceKey.swift.swift in Sources */,
 				AD992E6927209A9600699A1E /* CustomTabBarContainerView.swift in Sources */,
 			);
