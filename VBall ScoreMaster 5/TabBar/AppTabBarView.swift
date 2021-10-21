@@ -24,7 +24,8 @@ struct AppTabBarView: View {
             Color.green
                 .tabBarItem(tab: .support, selection: $tabSelection)
             
-            
+            Color.orange
+                .tabBarItem(tab: .messages, selection: $tabSelection)
         }
     }
 }
